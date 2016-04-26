@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Algoritma dan Flowchart</title>
+	<link rel="shortcut icon" href="../img/puzzle.ico">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="../css/jqm-demos.css">
+    <link rel="stylesheet" href="../css/jqm.font.css">
+	<script src="../js/jquery-2.2.3.js"></script>
+	<script src="../js/jqm-demos.js"></script>
+	<script src="../js/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
+
+<!-- header -->
+	<div data-role="header" class="jqm-header">
+		<h2><img src="../img/jqm-logo.png" alt="Mobile Friendly Logo"></h2>
+		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+	</div>
+<!-- header -->
+	<div role="main" class="ui-content jqm-content">
+		<h1>Konstruksi Dasar Algoritma</h1>
+		<p>Sebuah algoritma dapat dibangun dari tiga buah konstruksi atau struktur dasar, yaitu sequence (runtunan), selection (pemilihan), dan repetition (pengulangan).</p>
+		<img src="../img/konstruksidasar.png" alt="Konstruksi Dasar">
+		<h2>Runtunan</h2>
+		<p>Sebuah runtunan terdiri dari satu atau lebih instruksi. Tiap instruksi dikerjakan secara berurutan sesuai dengan urutan penulisannya, yakni sebuah
+		instruksi dilaksanakan setelah instruksi sebelumnya selesai dilaksanakan. Urutan instruksi menentukan keadaan akhir algoritma. Bila urutannya diubah, maka hasil akhir mungkin juga berubah.</p>
+		<p>Contoh algoritma  runtunan untuk menghitung keliling dan luas lingkaran :</p>
+		<ol>
+		<li>Mulai</li>
+		<li>Memasukkan nilai jari-jari lingkaran</li>
+		<li>Keliling = 2*3.14*jari-jari</li>
+		<li>Luas = 3.14*jari-jari*jari-jari</li>
+		<li>Tampilkan hasil keliling dan luas</li>
+		<li>Selesai</li>
+		</ol>
+		<h2>Pemilihan</h2>
+		<p>Adakalanya sebuah instruksi dikerjakan jika kondisi tertentu dipenuhi. Kondisi adalah persyaratan yang dapat bernilai benar atau salah. Dalam pemilihan dikenal beberapa struktur pemilihan, yaitu:</p>
+		<ol>
+		<li>If-then</li>
+		<p>Aksi hanya akan dilaksanakan apabila kondisi bernilai benar. Sebaliknya, apabila kondisi bernilai salah, maka aksi tidak akan dilaksanakan.</p>
+		<p>Struktur Umum:</p>
+		<div class="syntax">
+		<u>If </u><i> kondisi </i><u> then</u>
+		<ul><i>aksi 1</i></ul>
+		</div>
+		<p>Struktur pemilihan if-then hanya memberikan satu pilihan aksi bila kondisi (persyaratan) dipenuhi (bernilai benar), dan tidak memberikan pilihan aksi lain bila kondisi bernilai salah.</p>
+		<li>If-then-else</li>
+		<p>Struktur pemilihan ini memberikan dua buah aksi yang akan dikerjakan tergantung pada nilai kondisinya.</p>
+		<p>Struktur Umum:</p>
+		<div class="syntax">
+		<u>If </u><i> kondisi </i><u> then</u> 
+		<ul><i>aksi 1</i></ul>
+		<u>else</u>
+		<ul><i>aksi 2</i></ul>
+		</div>
+		<p>Else artinya ”kalau tidak”. Bila kondisi benar, aksi 1 yang akan dikerjakan, tetapi kalau tidak, aksi 2 yang akan dikerjakan.</p>
+		<p></p>
+		<li>If-then-else if</li>
+		<p>Apabila pilihan aksi yang dilakukan lebih dari dua buah, maka struktur pilihannya menjadi lebih rumit, biasanya untuk pemilihan seperti ini disebut <b>pemilihan bersarang</b>.</p>
+		<p>Contoh: menentukan bilangan terbesar dari tiga buah bilangan: x, y, z:</p>
+		<div class="syntax">
+		<u>If</u> x > y <u>then</u>
+		<ul>
+			<u>If</u> x > z <u>then</u>
+			<ul>Tulis x sebagai bilangan terbesar</ul>
+			<u>Else</u>
+			<ul>Tulis z sebagai bilangan terbesar</ul>
+		</ul>
+		<u>Else</u>
+		<ul>
+			<u>If</u> y > z <u>then</u>
+			<ul>Tulis y sebagai bilangan terbesar</ul>
+			<u>Else</u>
+			<ul>Tulis z sebagai bilangan terbesar</ul>
+		</ul></div>
+		<p>Kelebihan struktur pemilihan terletak pada kemampuannya yang memungkinakan pemroses mengikuti jalur aksi yang berbeda berdasarkan kondisi yang ada.</p>
+		</ol>
+		<h2>Pengulangan</h2>
+		<p>Salah satu kelebihan komputer adalah kemampuannya untuk mengerjakan pekerjaan yang sama berulang kali tanpa mengenal lelah. Ini berbeda dengan manusia yang cepat lelah bila mengerjakan pekerjaan yang sama berulang-ulang. Tidak hanya lelah, tapi juga cepat bosan.</p>
+		<p>Di algoritma terdapat banyak notasi pengulangan yang bisa digunakan, antara lain <i>repeat N times</i>, <i>for</i>, <i>repeat until</i> dan <i>while</i></p>
+		<ol>
+		<li>repeat N times</li>
+		<p><i>repeat N times</i> artinya ulangi sebanyak <i>N</i> kali, Struktur pengulangan ini dapat ditulis secara umum dengan pernyataan-pengulangan:</p>
+		<div class="syntax">
+		<u>repeat</u> N <u>times</u>
+		<ul>aksi</ul>
+		</div>
+		<p></p>
+		<li>for</li>
+		<p>Struktur pengulangan yang mirip dengan <i>repeat N times</i> adalah for</p>
+		<div class="syntax">
+		<u>for</u> pencacah pengulangan dari 1 sampai N <u>do</u>
+		<ul>aksi</ul>
+		</div>
+		<p>yang artinya adalah aksi dilakukan sebanyak hitungan cacah pengulangan, yaitu dari 1 sampai N (yaitu sebanyak N kali). Pencacah pengulangan
+		dapat di-set tidak hanya mulai dari 1, tetapi juga dari sembarang nilai yang lain.</p>
+		<li>repeat until</li>
+		<p><i>repeat-until</i> mempunyai bentuk umum sebagai berikut:</p>
+		<div class="syntax">
+		<u>repeat</u>
+		<ul>aksi</ul>
+		<u>until</u> kondisi
+		</div>
+		<p>yang artinya adalah pengulangan aksi dilakukan hingga kondisi (persyaratan) berhenti terpenuhi.</p>
+		<li>while</li>
+		<p>Struktur pengulangan <i>while</i> memiliki bentuk umum sebagai berikut:</p>
+		<div class="syntax">
+		<u>while</u> kondisi <u>do</u>
+		<ul>aksi</ul>
+		</div>
+		<p>yang artinya adalah selama kondisi (persyaratan) pengulangan masih benar maka aksi dikerjakan. </p>
+		</ol>
+	</div>
+
+
+<!-- navmenu panel -->
+    <div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+	    	<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+<li data-filtertext="homepage" data-icon="home"><a href=".././" data-transition="pop">Home</a></li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d " data-transition="slidedown">
+		    Algoritma<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian algoritma"><a href="../pengertian-algoritma/" data-ajax="false" data-transition="pop">Apakah Algoritma Itu?</a></li>
+			<li data-filtertext="algoritma dalam kehidupan"><a href="../lingkungan-algoritma/" data-ajax="false" data-transition="pop">Algoritma Dalam Kehidupan</a></li>
+			<li data-filtertext="sejarah algoritma"><a href="../sejarah-algoritma/" data-ajax="false" data-transition="pop">Sejarah Algoritma</a></li>
+			<li data-filtertext="konstruksi dasar algoritma"><a href="../konstruksi-dasar/" data-ajax="false" data-transition="pop">Konstruksi Dasar Algoritma</a></li>
+		</ul>
+	</div>
+</li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d " data-transition="slidedown">
+			Flowchart<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian flowchart"><a href="../pengertian-flowchart/" data-ajax="false" data-transition="pop">Apakah Flowchart Itu?</a></li>
+			<li data-filtertext="pedoman flowchart"><a href="../pedoman-flowchart/" data-ajax="false" data-transition="pop">Pedoman Flowchart</a></li>
+			<li data-filtertext="jenis flowchart"><a href="../jenis-flowchart/" data-ajax="false" data-transition="pop">Jenis FLowchart</a></li>
+			<li data-filtertext="simbol flowchart"><a href="../simbol-flowchart/" data-ajax="false" data-transition="pop">Simbol FLowchart</a></li>
+		</ul>
+	</div>
+</li>
+<li data-filtertext="contoh algoritma dan flowchart"><a href="../contoh/" data-ajax="false" data-transition="pop">Contoh</a></li>
+<li data-filtertext="quiz"><a href="../quiz/" data-ajax="false" data-transition="pop">Quiz</a></li>
+		     </ul>
+		</div><!-- /panel -->
+
+<!-- navmenu panel -->
+
+
+<!-- footer -->		
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+		<p>Algoritma dan Flowchart</p>
+		<p>Copyright 2016 The AHS Foundation</p>
+	</div>
+<!-- /footer -->
+	<!-- TODO: This should become an external panel so we can add input to markup (unique ID) -->
+
+<!-- search -->
+   <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
+		<div class="jqm-search">
+			<ul class="jqm-list" data-filter-placeholder="Search..." data-filter-reveal="true">
+<li data-filtertext="homepage" data-icon="home"><a href=".././" data-transition="pop">Home</a></li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
+		    Algoritma<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian algoritma"><a href="../pengertian-algoritma/" data-ajax="false" data-transition="pop">Apakah Algoritma Itu?</a></li>
+			<li data-filtertext="algoritma dalam kehidupan"><a href="../lingkungan-algoritma/" data-ajax="false" data-transition="pop">Algoritma Dalam Kehidupan</a></li>
+			<li data-filtertext="sejarah algoritma"><a href="../sejarah-algoritma/" data-ajax="false" data-transition="pop">Sejarah Algoritma</a></li>
+			<li data-filtertext="konstruksi dasar algoritma"><a href="../konstruksi-dasar/" data-ajax="false" data-transition="pop">Konstruksi Dasar Algoritma</a></li>
+		</ul>
+	</div>
+</li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
+			Flowchart<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian flowchart"><a href="../pengertian-flowchart/" data-ajax="false" data-transition="pop">Apakah Flowchart Itu?</a></li>
+			<li data-filtertext="pedoman flowchart"><a href="../pedoman-flowchart/" data-ajax="false" data-transition="pop">Pedoman Flowchart</a></li>
+			<li data-filtertext="jenis flowchart"><a href="../jenis-flowchart/" data-ajax="false" data-transition="pop">Jenis FLowchart</a></li>
+			<li data-filtertext="simbol flowchart"><a href="../simbol-flowchart/" data-ajax="false" data-transition="pop">Simbol FLowchart</a></li>
+		</ul>
+	</div>
+</li>
+<li data-filtertext="contoh algoritma dan flowchart"><a href="../contoh/" data-ajax="false" data-transition="pop">Contoh</a></li>
+<li data-filtertext="quiz"><a href="../quiz/" data-ajax="false" data-transition="pop">Quiz</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- search -->
+
+</div><!-- /page -->
+</body>
+</html>

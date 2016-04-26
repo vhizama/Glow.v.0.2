@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Algoritma dan Flowchart</title>
+	<link rel="shortcut icon" href="../img/puzzle.ico">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="../css/jqm-demos.css">
+    <link rel="stylesheet" href="../css/jqm.font.css">
+	<script src="../js/jquery-2.2.3.js"></script>
+	<script src="../js/jqm-demos.js"></script>
+	<script src="../js/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
+
+<!-- header -->
+	<div data-role="header" class="jqm-header">
+		<h2><img src="../img/jqm-logo.png" alt="Mobile Friendly Logo"></h2>
+		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+	</div>
+<!-- header -->
+	<div role="main" class="ui-content jqm-content">
+		<h1>Algoritma Dalam Flowchart</h1>
+		<h2>Runtunan</h2>
+		<p>Contoh Flowchart untuk mengubah temperatur dalam Fahrenheit menjadi temperatur dalam Celcius dengan rumus oC = 5/9 x (oF -32).</p>
+		<img src="../img/contoh1.png" alt="flowchart runtunan">
+		<h2>Pemilihan</h2>
+		<p>Contoh Struktur pemilihan untuk masalah batasan umur. 
+		Sebuah aturan untuk menonton sebuah film tertentu adalah sebagai berikut, 
+		jika usia penonton lebih dari 17 tahun maka penonton diperbolehkan dan apabila kurang dari 17 tahun maka penonton tidak diperbolehkan nonton. 
+		Buatlah flowchart untuk permasalahan tersebut.</p>
+		<img src="../img/contoh2.png" alt="flowchart pemilihan">
+		</br></br>
+		<p>Contoh Struktur pemilihan untuk perhitungan dua buah bilangan.
+		 Dalam suatu perhitungan nilai P = X + Y. Jika P positif, maka Q = X * Y, sedangkan jika negative maka nilai Q = X/Y. 
+		 Buatlah flowchart untuk mencari nilai P dan Q</p>
+		<img src="../img/contoh3.png" alt="flowchart pemilihan">
+		<h2>Pengulangan</h2>
+		<p>Contoh Algoritma menggunakan sturktur For untuk mencetak pernyataan sebanyak 100 kali.</p>
+		<img src="../img/contoh4.png" alt="flowchart pengulangan">
+		</br></br>
+		<p>Contoh Pengulangan dengan While untuk mencetak nilai tertentu.</p>
+		<img src="../img/contoh5.png" alt="flowchart pengulangan">
+		<p>Bagaimanakah output dari flowchart tersebut?</p>
+		<ol>
+		<li>Pada flowchart ini ada dua variabel yang kita gunakan yaitu A dan B. Kedua variabel tersebut kita inisialisasi nilai awalnya (A = 1 dan B = 0) sebelum proses
+		 loop terjadi. Variabel A adalah variabel counter.</li>
+		<li>Pada simbol decision, nilai A akan diperiksa apakah memenuhi kondisi (< 10).
+		Jika Ya maka perintah berikutnya dieksekusi, jika tidak maka program akan berhenti. Pada awal eksekusi ini kondisi akan terpenuhi karena nilai A = 1.</li>
+		<li>Jalankan perintah Print B.</li>
+		<li>Nilai variabel A kemudian diganti dengan nilai A lama (1) ditambah 2. Sehingga nilai variabel A baru adalah 3. Sedangkan nilai variabel B = 9 (hasil perkalian A = 3).</li>
+		<li>Program akan berputar kembali untuk memeriksa apakah nilai variabel A masih lebih kecil dari 10. Pada kondisi ini nilai A = 3, sehingga kondisi masih terpenuhi. Kemudian langkah berulang ke langkah ke 3. Begitu seterusnya sampai nilai variabel A tidak lagi memenuhi syarat kurang dari 10. Sehingga output dari flowchart ini adalah : 0, 9, 25, 49, 81.</li>
+		</ol>
+		
+	</div>
+
+
+<!-- navmenu panel -->
+    <div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+	    	<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+<li data-filtertext="homepage" data-icon="home"><a href=".././" data-transition="pop">Home</a></li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d " data-transition="slidedown">
+		    Algoritma<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian algoritma"><a href="../pengertian-algoritma/" data-ajax="false" data-transition="pop">Apakah Algoritma Itu?</a></li>
+			<li data-filtertext="algoritma dalam kehidupan"><a href="../lingkungan-algoritma/" data-ajax="false" data-transition="pop">Algoritma Dalam Kehidupan</a></li>
+			<li data-filtertext="sejarah algoritma"><a href="../sejarah-algoritma/" data-ajax="false" data-transition="pop">Sejarah Algoritma</a></li>
+			<li data-filtertext="konstruksi dasar algoritma"><a href="../konstruksi-dasar/" data-ajax="false" data-transition="pop">Konstruksi Dasar Algoritma</a></li>
+		</ul>
+	</div>
+</li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d " data-transition="slidedown">
+			Flowchart<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian flowchart"><a href="../pengertian-flowchart/" data-ajax="false" data-transition="pop">Apakah Flowchart Itu?</a></li>
+			<li data-filtertext="pedoman flowchart"><a href="../pedoman-flowchart/" data-ajax="false" data-transition="pop">Pedoman Flowchart</a></li>
+			<li data-filtertext="jenis flowchart"><a href="../jenis-flowchart/" data-ajax="false" data-transition="pop">Jenis FLowchart</a></li>
+			<li data-filtertext="simbol flowchart"><a href="../simbol-flowchart/" data-ajax="false" data-transition="pop">Simbol FLowchart</a></li>
+		</ul>
+	</div>
+</li>
+<li data-filtertext="contoh algoritma dan flowchart"><a href="../contoh/" data-ajax="false" data-transition="pop">Contoh</a></li>
+<li data-filtertext="quiz"><a href="../quiz/" data-ajax="false" data-transition="pop">Quiz</a></li>
+		     </ul>
+		</div><!-- /panel -->
+
+<!-- navmenu panel -->
+
+
+<!-- footer -->		
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+		<p>Algoritma dan Flowchart</p>
+		<p>Copyright 2016 The AHS Foundation</p>
+	</div>
+<!-- /footer -->
+	<!-- TODO: This should become an external panel so we can add input to markup (unique ID) -->
+
+<!-- search -->
+   <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
+		<div class="jqm-search">
+			<ul class="jqm-list" data-filter-placeholder="Search..." data-filter-reveal="true">
+<li data-filtertext="homepage" data-icon="home"><a href=".././" data-transition="pop">Home</a></li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
+		    Algoritma<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian algoritma"><a href="../pengertian-algoritma/" data-ajax="false" data-transition="pop">Apakah Algoritma Itu?</a></li>
+			<li data-filtertext="algoritma dalam kehidupan"><a href="../lingkungan-algoritma/" data-ajax="false" data-transition="pop">Algoritma Dalam Kehidupan</a></li>
+			<li data-filtertext="sejarah algoritma"><a href="../sejarah-algoritma/" data-ajax="false" data-transition="pop">Sejarah Algoritma</a></li>
+			<li data-filtertext="konstruksi dasar algoritma"><a href="../konstruksi-dasar/" data-ajax="false" data-transition="pop">Konstruksi Dasar Algoritma</a></li>
+		</ul>
+	</div>
+</li>
+<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+	<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+		<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
+			Flowchart<span class="ui-collapsible-heading-status"> click to expand contents</span>
+		</a>
+	</h3>
+	<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+		<ul>
+			<li data-filtertext="pengertian flowchart"><a href="../pengertian-flowchart/" data-ajax="false" data-transition="pop">Apakah Flowchart Itu?</a></li>
+			<li data-filtertext="pedoman flowchart"><a href="../pedoman-flowchart/" data-ajax="false" data-transition="pop">Pedoman Flowchart</a></li>
+			<li data-filtertext="jenis flowchart"><a href="../jenis-flowchart/" data-ajax="false" data-transition="pop">Jenis FLowchart</a></li>
+			<li data-filtertext="simbol flowchart"><a href="../simbol-flowchart/" data-ajax="false" data-transition="pop">Simbol FLowchart</a></li>
+		</ul>
+	</div>
+</li>
+<li data-filtertext="contoh algoritma dan flowchart"><a href="../contoh/" data-ajax="false" data-transition="pop">Contoh</a></li>
+<li data-filtertext="quiz"><a href="../quiz/" data-ajax="false" data-transition="pop">Quiz</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- search -->
+
+</div><!-- /page -->
+</body>
+</html>
